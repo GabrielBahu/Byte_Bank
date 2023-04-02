@@ -1,16 +1,16 @@
 package br.com.alura.bytebank;
 
+import java.util.Scanner;
+
 import br.com.alura.bytebank.domain.RegraDeNegocioException;
 import br.com.alura.bytebank.domain.cliente.DadosCadastroCliente;
 import br.com.alura.bytebank.domain.conta.ContaService;
 import br.com.alura.bytebank.domain.conta.DadosAberturaConta;
 
-import java.util.Scanner;
-
 public class BytebankApplication {
 
     private static ContaService service = new ContaService();
-    private static Scanner teclado = new Scanner(System.in).useDelimiter("\n");
+    private static Scanner teclado = new Scanner(System.in).useDelimiter("\r\n");
 
     public static void main(String[] args) {
         var opcao = exibirMenu();
